@@ -1,0 +1,105 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card templete</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+      body{
+        background-color: rgb(255, 255, 255);
+        height: 100vh;
+        /* width: 100vw; */
+
+        
+      }
+      .box{
+        background-color: rgb(29, 166, 166);
+        border-radius: 12px;
+        text-align: center;
+        width: 250px ;
+        margin: auto;
+        padding-bottom: 5px;
+      }
+      .box img{
+        border-radius: 12px;
+        width: 240px;
+        margin-top: 5px;
+      }
+      .tags {
+        display: flex;
+        gap: 8px ;
+        margin: 5px 8px ;
+      }
+      .tag:hover{
+        cursor: pointer;
+      }
+      .tag{
+        display: inline-block;
+        border: 1px solid rgb(95, 50, 50);
+        border-radius: 12px;
+        padding: 3px 5px ;
+        font-size: 12px;
+      }
+      .box h2{
+        margin-top: 4px;
+        font-size: 20px ;
+        margin-left: 10px;
+        text-align: left;
+        margin-bottom: 5px;
+      }
+      .box p{
+        margin-top: 12px;
+        text-align: left;
+        margin-left: 10px;
+        font-size: 15px;
+        margin: 12px 10px;
+        line-height: 1.5;
+        /* color: brown; */
+      }
+      .btn{
+        display: block;
+        margin: 0px auto 15px;
+        text-decoration: none;
+        background-color: rgb(94, 76, 230);
+        color: rgb(255, 255, 255);
+        padding: 8px 20px;
+        border-radius: 16px;
+        font-size: 14px;
+        font-weight: bold;
+        width: fit-content;
+      }
+
+      .btn:hover{
+        background-color: rgb(0, 0, 0);
+        color: rgb(255, 255, 255);
+      }
+
+    </style>
+  </head>
+  <body>
+    <!-- card.png is a file which contains a card Image. Write html and css code to design this card. Use #html -->
+
+    <div class="box">
+      <img src="https://images.unsplash.com/photo-1756745678624-f07d39abb496?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwxNHx8fGVufDB8fHx8fA%3D%3D"alt="Nature view"width="180">
+
+      <div class="tags">
+        <span class="tag">Nature</span>
+        <span class="tag">Lake</span>
+      </div>
+
+      <!-- Title -->
+      <h2>Lago di Braies</h2>
+
+      <!-- Paragraph -->
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Consectetur
+        sodales morbi dignissim sed diam pharetra vitae ipsum odio.
+      </p>
+
+      <!-- Button -->
+      <a href="#" class="btn">Read More</a>
+    </div>
+  </body>
+</html>

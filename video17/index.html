@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Selectors</title>
+  </head>
+  <style>
+    *{
+        margin: 0;
+        padding: 10;
+    }
+    div > p{
+        color: brown;
+        background-color: aqua;
+    }
+    .one :last-child{
+        background-color: coral;
+    }
+    div > p{
+        background-color: burlywood;
+    }
+    a:active{
+        background-color: cadetblue;
+    }
+    a:hover{
+        background-color: aquamarine;
+    }
+  </style>
+  <body>
+    <main class="one">
+      <p>I am first</p>
+      <p>I am second</p>
+    </main>
+    <div class="red">
+      I am a div
+      <article>
+        <p>I am a para inside div</p>
+      </article>
+    </div>
+    <div>
+        <p>
+            i am satya
+        </p>
+    </div>
+
+    <div id="green">I am another div</div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook2.com">Go to Facebook</a>
+  </body>
+</html>

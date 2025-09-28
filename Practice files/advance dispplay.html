@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Project</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navbar with FLEX */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #333;
+      padding: 15px;
+    }
+    nav .logo {
+      color: white;
+      font-size: 20px;
+    }
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+
+    /* About Section (Block + Inline) */
+    .about {
+      padding: 40px;
+      text-align: center;
+    }
+    .about p span {
+      display: inline; /* Inline Example */
+      color: blue;
+      font-weight: bold;
+    }
+
+    /* Skills Section (Inline-block) */
+    .skills {
+      text-align: center;
+      padding: 40px;
+    }
+    .skill-card {
+      display: inline-block; /* Inline-block Example */
+      width: 150px;
+      margin: 10px;
+      padding: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
+    }
+
+    /* Projects Section (Grid) */
+    .projects {
+      display: grid; /* Grid Example */
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 40px;
+    }
+    .project-card {
+      background: #f5f5f5;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      transition: 0.3s;
+    }
+    .project-card:hover {
+      background: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav>
+    <div class="logo">MyPortfolio</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Skills</a></li>
+      <li><a href="#">Projects</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- About -->
+  <section class="about">
+    <h1>About Me</h1>
+    <p>Hello! I am <span>Satyasheel</span>, a web developer learning <span>CSS Display</span> deeply.</p>
+  </section>
+
+  <!-- Skills -->
+  <section class="skills">
+    <h2>My Skills</h2>
+    <div class="skill-card">HTML</div>
+    <div class="skill-card">CSS</div>
+    <div class="skill-card">JavaScript</div>
+    <div class="skill-card">React</div>
+  </section>
+
+  <!-- Projects -->
+  <section class="projects">
+    <div class="project-card">Project 1</div>
+    <div class="project-card">Project 2</div>
+    <div class="project-card">Project 3</div>
+    <div class="project-card">Project 4</div>
+  </section>
+</body>
+</html>

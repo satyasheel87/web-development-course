@@ -1,0 +1,237 @@
+<head>
+    <title>profile page</title>
+  </head>
+  <body>
+    <label for="Name">Enter you Name</label>
+    <input type="text" id="name" placeholder="Enter Your Name " />
+    <div>
+            <label for="city">Enter your city</label>
+            <input type="text" id="city" placeholder="Enter Your City" />
+        </div>
+    <label for="Village">Enter your Village</label>
+    <input type="text" id="Village" placeholder="Enter Your Village" />
+    <div>
+            <label for="comment">Write about your passion-</label>
+            <div>
+              <button>Click me</button>
+              <link rel="stylesheet" href="style1.css">
+            </div>          
+        </div>
+            <textarea name="comment" id="Write about your passion" rows="10" cols="25">
+Write about your passion....</textarea>
+  </body>
+</html>
+
+<!-- <!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Profile Page</title>
+
+  <style>
+    :root{
+      --bg: #f5f7fb;
+      --card: #ffffff;
+      --muted: #6b7280;
+      --accent: #2563eb; /* blue accent */
+      --accent-2: #0ea5a3; /* teal accent */
+      --input-border: #e6e9ef;
+      --shadow: 0 6px 20px rgba(16,24,40,0.08);
+      --radius: 12px;
+      --radius-sm: 8px;
+      --max-width: 720px;
+      --gap: 16px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /* Page layout */
+    html,body{
+      height:100%;
+      margin:0;
+      background: linear-gradient(180deg, #f7fbff 0%, var(--bg) 100%);
+      color:#0f172a;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+
+    .container{
+      min-height:100%;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:48px 20px;
+    }
+
+    .card{
+      width:100%;
+      max-width:var(--max-width);
+      background:var(--card);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow);
+      padding:28px;
+      box-sizing:border-box;
+      border: 1px solid rgba(15,23,42,0.04);
+    }
+
+    .header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:18px;
+    }
+
+    .title{
+      font-size:20px;
+      font-weight:700;
+      letter-spacing: -0.2px;
+      margin:0;
+    }
+
+    .subtitle{
+      font-size:13px;
+      color:var(--muted);
+      margin:0;
+    }
+
+    form{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:var(--gap);
+      align-items:start;
+    }
+
+    /* Make the textarea full width below inputs */
+    .full {
+      grid-column: 1 / -1;
+    }
+
+    label{
+      display:block;
+      font-size:13px;
+      color:var(--muted);
+      margin-bottom:8px;
+      font-weight:600;
+    }
+
+    input[type="text"],
+    textarea{
+      width:100%;
+      padding:12px 14px;
+      border-radius:var(--radius-sm);
+      border:1px solid var(--input-border);
+      background:transparent;
+      outline:none;
+      box-sizing:border-box;
+      font-size:14px;
+      transition: box-shadow .18s ease, border-color .18s ease, transform .08s;
+      resize:vertical;
+      min-height:44px;
+    }
+
+    input[type="text"]::placeholder,
+    textarea::placeholder{
+      color:#97a0b8;
+      font-weight:500;
+    }
+
+    input[type="text"]:focus,
+    textarea:focus{
+      border-color: rgba(37,99,235,0.9);
+      box-shadow: 0 6px 18px rgba(37,99,235,0.08);
+      transform: translateY(-1px);
+    }
+
+    /* Small helper text */
+    .hint{
+      display:block;
+      font-size:12px;
+      color:#8b94a6;
+      margin-top:6px;
+    }
+
+    /* Submit row */
+    .actions{
+      display:flex;
+      justify-content:flex-end;
+      gap:12px;
+      margin-top:14px;
+      grid-column: 1 / -1;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      gap:8px;
+      padding:10px 14px;
+      font-weight:600;
+      border-radius:10px;
+      cursor:pointer;
+      border:0;
+      background:var(--accent);
+      color:white;
+      box-shadow: 0 6px 18px rgba(37,99,235,0.12);
+      transition: transform .12s ease, box-shadow .12s ease, opacity .12s;
+    }
+
+    .btn.secondary{
+      background:transparent;
+      color:var(--muted);
+      border:1px solid var(--input-border);
+      box-shadow:none;
+    }
+
+    .btn:active{ transform:translateY(1px); }
+    .btn:hover{ opacity:0.98; }
+
+    /* Simple responsive */
+    @media (max-width:760px){
+      form{ grid-template-columns: 1fr; }
+      .header{ flex-direction:column; align-items:flex-start; gap:6px; }
+      .actions{ justify-content:stretch; flex-direction:column-reverse; }
+      .btn{ width:100%; justify-content:center; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card" role="region" aria-labelledby="profileHeading">
+      <div class="header">
+        <div>
+          <h1 id="profileHeading" class="title">Profile Page</h1>
+          <p class="subtitle">Fill your basic information — clean & responsive form</p>
+        </div>
+      </div>
+
+      <form autocomplete="on" novalidate>
+        <div>
+          <label for="name">Enter your Name</label>
+          <input type="text" id="name" name="name" placeholder="e.g. Satyasheel Gautam" />
+        </div>
+
+        <div>
+          <label for="city">Enter your City</label>
+          <input type="text" id="city" name="city" placeholder="e.g. Lucknow" />
+        </div>
+
+        <div>
+          <label for="village">Enter your Village</label>
+          <input type="text" id="village" name="village" placeholder="e.g. Your village name" />
+        </div>
+
+        <div class="full">
+          <label for="passion">Write about your passion</label>
+          <textarea id="passion" name="passion" rows="6" placeholder="Write about your passion..."></textarea>
+          <span class="hint">Share your hobbies, goals, or what motivates you — keep it short and clear.</span>
+        </div>
+
+        <div class="actions">
+          <button type="button" class="btn secondary">Cancel</button>
+          <button type="submit" class="btn">Save Profile</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html> -->

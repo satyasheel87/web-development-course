@@ -1,0 +1,121 @@
+/* body {
+
+  height: 160vh;
+
+} */
+:root {
+  --hedcolor-color: blueviolet;
+  --header: #dbcbfb;
+  --paracolor: rgb(235, 255, 255);
+}
+
+header {
+  top: 0px;
+  display: flex;
+  position: sticky;
+  padding: 15px 30px;
+  border-radius: 12px;
+  align-items: center;
+  background: var(--header);
+  justify-content: space-between;
+}
+.logo a {
+  color: black;
+  text-decoration: none;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.search-box {
+  /* flex: 1; search box aut button beech wala space le */
+  display: flex;
+}
+
+.search-box input[type="text"] {
+  width: 20vw;
+  padding: 8px;
+  outline: none;
+  border-radius: 5px 0 0 5px;
+  border: 0px solid #cccccc;
+}
+
+.search-box button {
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 8px 12px;
+  background: #333;
+  border-radius: 0 5px 5px 0;
+}
+.menu a {
+  width: 0vw;
+  padding: 2px;
+  color: #333;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  text-decoration: underline;
+}
+
+.head1 h1 {
+  font-size: 20px;
+  margin-top: 15px;
+  word-spacing: 5px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: blueviolet;
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.hed1 h1 {
+  font-size: 25px;
+  color: var(--hedcolor-color);
+}
+.hed1 p {
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 1cm;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px 0px;
+  background-color: var(--paracolor);
+}
+
+.hed2 h1 {
+  font-size: 25px;
+  color: var(--hedcolor-color);
+}
+
+.hed2 > p {
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 1cm;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px 0px;
+  background-color: var(--paracolor);
+}
+
+.hed3 h1 {
+  font-size: 25px;
+  color: var(--hedcolor-color);
+  /* font-family: "Lucida Grande"; */
+}
+.hed3 p {
+  margin: 20px;
+  padding: 10px;
+  font-size: 20px;
+  line-height: 1cm;
+  border-radius: 12px;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 15px 0px;
+  background-color: var(--paracolor);
+}
